@@ -71,3 +71,35 @@ button:focus-visible {
     background-color: #01C6B2;
   }
 }
+
+
+/* Точное переопределение Ant Design выпадающего меню */
+.custom-dropdown-menu .ant-dropdown-menu {
+  background-color: rgb(28, 31, 34) !important;
+}
+
+.custom-dropdown-menu .ant-dropdown-menu-item {
+  color: #a3a3a3 !important;
+  
+}
+
+.custom-dropdown-menu .ant-dropdown-menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+     color: rgb(28, 31, 34) !important;
+
+}
+
+.custom-dropdown-menu .ant-dropdown-menu-item-selected {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+    color: rgb(28, 31, 34) !important;
+}
+
+.bg-dashed-line {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #01c6b2 0px,
+    #01c6b2 4px,
+    transparent 4px,
+    transparent 8px
+  );
+}
