@@ -1,6 +1,7 @@
 
 
 import './App.css'
+import { CashBack } from './shared/ui/CashBack/CashBack'
 import { DepositHeader } from './shared/ui/DepositHeader/DepositHeader'
 import { Input } from './shared/ui/Input/Input'
 import LanguageSelector from './shared/ui/LanguageSelector/LanguageSelector'
@@ -23,7 +24,8 @@ function App() {
       {/* <OneХTwoСard label="Label" amount={100} /> */}
       {/* <LanguageSelector/> */}
       {/* <DepositHeader/> */}
-      <ProgressBar/>
+      {/* <ProgressBar/> */}
+      <CashBack amount={100} percent={100}/>
     </>
   )
 }

@@ -94,12 +94,9 @@ button:focus-visible {
     color: rgb(28, 31, 34) !important;
 }
 
+
+ /* Cтили для черточки в прогресс баре  что б она попадала под опасити*/
 .bg-dashed-line {
-  background-image: repeating-linear-gradient(
-    to bottom,
-    #01c6b2 0px,
-    #01c6b2 4px,
-    transparent 4px,
-    transparent 8px
-  );
+  border-left: 2px dashed #01C6B2;
+  content: "";
 }
