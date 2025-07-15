@@ -1,6 +1,7 @@
 import "./App.css";
 import { CashBack } from "./shared/ui/CashBack/CashBack";
 import { DepositHeader } from "./shared/ui/DepositHeader/DepositHeader";
+import { FeedbackCard } from "./shared/ui/FeedbackCard/FeedbackCard";
 import { Input } from "./shared/ui/Input/Input";
 import LanguageSelector from "./shared/ui/LanguageSelector/LanguageSelector";
 import { LatesPromotionCard } from "./shared/ui/LatesPromotionCard/LatesPromotionCard";
@@ -24,10 +25,15 @@ function App() {
       {/* <ProgressBar/> */}
       {/* <CashBack amount={100} percent={100}/> */}
       {/* <ProfileSummary email="paskudaw@gmail.com" amount={100} /> */}
-      <LatesPromotionCard
+      {/* <LatesPromotionCard
         endsIn="Ends at
-1:35 PM 10/14/2026"
+         1:35 PM 10/14/2026"
         betType="Brand’s Daily Races – $150,000 Up for Grabs Every Day!"
+      /> */}
+      <FeedbackCard
+        userName="User Name"
+        text="I recently played one of the games on Rollaura, and I must say I was impressed by the overall experience. The website's user interface is intuitive and easy to navigate, and the games offered are entertaining and diverse. The ability to earn crypto while playing adds an extra layer of excitement to the gameplay." 
+        activeStars={5}
       />
     </>
   );
