@@ -7,6 +7,7 @@ import LanguageSelector from "./shared/ui/LanguageSelector/LanguageSelector";
 import { LatesPromotionCard } from "./shared/ui/LatesPromotionCard/LatesPromotionCard";
 import { OneХTwoСard } from "./shared/ui/OneХTwoСard/OneХTwoСard";
 import { PlaceBetBtn } from "./shared/ui/PlaceBetBtn/PlaceBetBtn";
+import { PopularEvents } from "./shared/ui/PopularEvents/PopularEvents";
 import PrimaryButton from "./shared/ui/PrimaryButton/PrimaryButton";
 import { ProfileSummary } from "./shared/ui/ProfileSummary/ProfileSummary";
 import { ProgressBar } from "./shared/ui/ProgressBar/ProgressBar";
@@ -30,11 +31,12 @@ function App() {
          1:35 PM 10/14/2026"
         betType="Brand’s Daily Races – $150,000 Up for Grabs Every Day!"
       /> */}
-      <FeedbackCard
+      {/* <FeedbackCard
         userName="User Name"
         text="I recently played one of the games on Rollaura, and I must say I was impressed by the overall experience. The website's user interface is intuitive and easy to navigate, and the games offered are entertaining and diverse. The ability to earn crypto while playing adds an extra layer of excitement to the gameplay." 
         activeStars={5}
-      />
+      /> */}
+      <PopularEvents />
     </>
   );
 }
