@@ -3,6 +3,7 @@ import { ActivateCodeCard } from "./shared/ui/ActivateCodeCard/ActivateCodeCard"
 import { BetSlip } from "./shared/ui/BetSlip/BetSlip";
 import { CashBack } from "./shared/ui/CashBack/CashBack";
 import { DepositHeader } from "./shared/ui/DepositHeader/DepositHeader";
+import { ErrorSuccessModal } from "./shared/ui/ErrorSuccessModal/ErrorSuccessModal";
 import { FeedbackCard } from "./shared/ui/FeedbackCard/FeedbackCard";
 import { Input } from "./shared/ui/Input/Input";
 import LanguageSelector from "./shared/ui/LanguageSelector/LanguageSelector";
@@ -19,7 +20,6 @@ function App() {
   return (
     <>
       {/* <PrimaryButton label="Update" />
-      <Input title="Title" placeholder="Placeholder" />
       <PlaceBetBtn label="Place Bet" /> */}
       {/* <WinnerCard label="Label" amount={100} players="Lys, Eva" />  */}
       {/* <OneХTwoСard label="Label" amount={100} /> */}
@@ -40,7 +40,10 @@ function App() {
       /> */}
       {/* <PopularEvents /> */}
       {/* <ActivateCodeCard/> */}
-      <BetSlip/>
+      {/* <BetSlip/> */}
+      {/* <ErrorSuccessModal/> */}
+      {/* <Input title="Title" placeholder="Placeholder" /> */}
+      <PrimaryButton label="Update" />
     </>
   );
 }

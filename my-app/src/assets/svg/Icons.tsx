@@ -433,3 +433,85 @@ export const SystemPatchIcon: React.FC<React.SVGProps<SVGSVGElement>> = (
     </defs>
   </svg>
 );
+
+/* ErrorSuccessModal*/
+
+export const CrossIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
+  <svg
+    width={24}
+    height={24}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M18 6L6 18"
+      stroke="white"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M6 6L18 18"
+      stroke="white"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+export const VerificationIcon = () => (
+  <svg
+    width="14"
+    height="14"
+    viewBox="0 0 14 14"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M2.33352 0C1.59342 0 1 0.593333 1 1.33333V12C1 12.3536 1.1405 12.6928 1.39058 12.9428C1.64066 13.1929 1.97985 13.3333 2.33352 13.3333H5.00056V12.06L6.39408 10.6667H2.33352V9.33333H7.7276L9.06112 8H2.33352V6.66667H10.3946L11.6681 5.39333V4L7.66759 0H2.33352ZM7.00083 1L10.668 4.66667H7.00083V1ZM11.7682 7.33333C11.6681 7.33333 11.5748 7.36667 11.5015 7.44L10.8214 8.12L12.2149 9.50667L12.895 8.83333C13.035 8.68667 13.035 8.44667 12.895 8.30667L12.0282 7.44C11.9549 7.36667 11.8615 7.33333 11.7682 7.33333ZM10.428 8.51333L6.33407 12.6133V14H7.72093L11.8215 9.9L10.428 8.51333Z"
+      fill="#0F1112"
+    />
+  </svg>
+);
+
+export const ChatIcon = () => (
+  <svg
+    width="14"
+    height="14"
+    viewBox="0 0 14 14"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M7.00172 -0.000244141H6.98334C3.73272 -0.000244141 1.09766 2.63482 1.09766 5.88544C1.09766 5.92438 1.09809 5.96332 1.09897 6.00226V5.99657V10.8909H4.90216V6.69657H3.11147V5.99657C3.11004 5.95371 3.10931 5.91083 3.10928 5.86794C3.10928 3.73863 4.83566 2.01226 6.96497 2.01226H7.00391H7.00172H7.03891C9.16822 2.01226 10.8946 3.73863 10.8946 5.86794C10.8946 5.91301 10.8939 5.95807 10.8924 6.00313V5.99657V6.69657H9.10172V10.8909H10.7524C10.3731 11.7952 9.15991 11.9877 7.00172 11.9877V14.0002C8.92103 14.0002 12.9049 14.0002 12.9049 10.197V5.99701C12.9058 5.96419 12.9058 5.92526 12.9058 5.88632C12.9058 2.63569 10.2707 0.000630859 7.02009 0.000630859H7.00041L7.00172 -0.000244141Z"
+      fill="white"
+    />
+  </svg>
+);
+
+export const DepositIcon = () => (
+  <svg
+    width="14"
+    height="14"
+    viewBox="0 0 14 14"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle cx="7" cy="7" r="6" stroke="#0F1112" strokeWidth="1.33333" />
+    <path
+      d="M7 9L7 5"
+      stroke="#0F1112"
+      strokeWidth="1.33333"
+      strokeLinecap="square"
+    />
+    <path
+      d="M9 7L5 7"
+      stroke="#0F1112"
+      strokeWidth="1.33333"
+      strokeLinecap="square"
+    />
+  </svg>
+);
