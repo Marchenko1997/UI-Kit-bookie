@@ -34,7 +34,7 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({ className  }) => {
               </p>
             </div>
 
-            {/* Черта под кружком (если это не последний шаг) */}
+      
             {index < verificationSteps.length - 1 && (
               <div
                 className={`ml-[20px] w-[2px] h-[20px] ${

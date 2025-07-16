@@ -8,17 +8,19 @@ interface WinnerCardProps {
 
 export const WinnerCard: React.FC<WinnerCardProps> = ({ label, amount, players }) => {
     return (
-      <div className="flex justify-between w-full p-[18px]">
-        <div className="flex-1 flex flex-col gap-[6px]">
+      <div className="flex justify-between w-full p-[18px] bg-[#1C1F22]">
+        <div className="flex-1 flex flex-col ">
           <span className="text-[#A3A3A3]  font-['Proxima_Nova',sans-serif] text-[12px] font-normal leading-[15px] capitalize text-left">
             Starts in 4 minutes
           </span>
-          <p className="text-white  font-['Proxima_Nova',sans-serif] text-[14px] font-bold leading-[17px] text-left">
-            {players}
-          </p>
-          <p className="text-white  font-['Proxima_Nova',sans-serif] text-[14px] font-bold leading-[17px] text-left">
-            {players}
-          </p>
+          <div className="flex flex-col gap-[6px] md:mt-[17px]">
+            <p className="text-white  font-['Proxima_Nova',sans-serif] text-[14px] font-bold leading-[17px] text-left">
+              {players}
+            </p>
+            <p className="text-white  font-['Proxima_Nova',sans-serif] text-[14px] font-bold leading-[17px] text-left">
+              {players}
+            </p>
+          </div>
         </div>
         <div className="flex flex-col gap-[9px]">
           <h3

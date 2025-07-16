@@ -19,7 +19,7 @@ function App() {
       {/* <PrimaryButton label="Update" />
       <Input title="Title" placeholder="Placeholder" />
       <PlaceBetBtn label="Place Bet" /> */}
-      {/* <WinnerCard label="Label" amount={100} players="Players" />  */}
+      <WinnerCard label="Label" amount={100} players="Lys, Eva" /> 
       {/* <OneХTwoСard label="Label" amount={100} /> */}
       {/* <LanguageSelector/> */}
       {/* <DepositHeader/> */}
@@ -36,7 +36,7 @@ function App() {
         text="I recently played one of the games on Rollaura, and I must say I was impressed by the overall experience. The website's user interface is intuitive and easy to navigate, and the games offered are entertaining and diverse. The ability to earn crypto while playing adds an extra layer of excitement to the gameplay." 
         activeStars={5}
       /> */}
-      <PopularEvents />
+      {/* <PopularEvents /> */}
     </>
   );
 }
