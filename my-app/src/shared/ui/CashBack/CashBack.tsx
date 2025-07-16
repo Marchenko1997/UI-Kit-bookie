@@ -7,7 +7,7 @@ interface CashBackProps {
 
 export const CashBack: React.FC<CashBackProps> = ({ amount, percent }) => {
   return (
-    <div className="flex flex-col w-[338px] gap-[14px]">
+    <div className="flex flex-col w-[338px] gap-[14px] bg-[#1C1F22] px-[16px] py-[24px]">
       <h3
         className="text-white font-bold text-[14px] leading-[14px] text-left"
         style={{ fontFamily: "Proxima Nova , sans-serif" }}
@@ -45,9 +45,9 @@ export const CashBack: React.FC<CashBackProps> = ({ amount, percent }) => {
         </div>
       </div>
       <div className="flex gap-[10px]">
-        <div className=" flexx flex-col gap-[4px] w-[154px] h-[49px] rounded-[4px] bg-[#0F1112] px-[15px] py-[8px]">
+        <div className=" flex flex-col gap-[4px] w-[154px] h-[49px] rounded-[4px] bg-[#0F1112] px-[15px] py-[8px]">
           <p
-            className="text-[13px] leading-[16px] font-medium text-left"
+            className="text-[13px] leading-[16px] font-medium text-left truncate"
             style={{
               color: "rgba(163, 163, 163, 0.3)",
               fontFamily: "Inter, sans-serif",

@@ -1,4 +1,6 @@
 import "./App.css";
+import { ActivateCodeCard } from "./shared/ui/ActivateCodeCard/ActivateCodeCard";
+import { BetSlip } from "./shared/ui/BetSlip/BetSlip";
 import { CashBack } from "./shared/ui/CashBack/CashBack";
 import { DepositHeader } from "./shared/ui/DepositHeader/DepositHeader";
 import { FeedbackCard } from "./shared/ui/FeedbackCard/FeedbackCard";
@@ -19,7 +21,7 @@ function App() {
       {/* <PrimaryButton label="Update" />
       <Input title="Title" placeholder="Placeholder" />
       <PlaceBetBtn label="Place Bet" /> */}
-      <WinnerCard label="Label" amount={100} players="Lys, Eva" /> 
+      {/* <WinnerCard label="Label" amount={100} players="Lys, Eva" />  */}
       {/* <OneХTwoСard label="Label" amount={100} /> */}
       {/* <LanguageSelector/> */}
       {/* <DepositHeader/> */}
@@ -37,6 +39,8 @@ function App() {
         activeStars={5}
       /> */}
       {/* <PopularEvents /> */}
+      {/* <ActivateCodeCard/> */}
+      <BetSlip/>
     </>
   );
 }
