@@ -16,6 +16,7 @@ import PrimaryButton from "./shared/ui/PrimaryButton/PrimaryButton";
 import { ProfileSummary } from "./shared/ui/ProfileSummary/ProfileSummary";
 import { ProgressBar } from "./shared/ui/ProgressBar/ProgressBar";
 import { UserDashboardTabs } from "./shared/ui/UserDashboardTabs/UserDashboardTabs";
+import { VerificationStatus } from "./shared/ui/VerificationStatus/VerificationStatus";
 import { WinnerCard } from "./shared/ui/WinnerCard/WinnerCard";
 import { WithdrawDepositMethod } from "./shared/ui/WithdrawDepositMethod/WithdrawDepositMethod";
 
@@ -49,7 +50,8 @@ function App() {
       {/* <PrimaryButton label="Update" /> */}
       {/* <ActiveBonuses  amount={300}/> */}
       {/* <WithdrawDepositMethod/> */}
-      <UserDashboardTabs />
+      {/* <UserDashboardTabs /> */}
+      <VerificationStatus />
     </>
   );
 }
