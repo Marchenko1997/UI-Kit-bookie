@@ -1,5 +1,6 @@
 import "./App.css";
 import { ActivateCodeCard } from "./shared/ui/ActivateCodeCard/ActivateCodeCard";
+import { ActiveBonuses } from "./shared/ui/ActiveBonuses/ActiveBonuses";
 import { BetSlip } from "./shared/ui/BetSlip/BetSlip";
 import { CashBack } from "./shared/ui/CashBack/CashBack";
 import { DepositHeader } from "./shared/ui/DepositHeader/DepositHeader";
@@ -15,6 +16,7 @@ import PrimaryButton from "./shared/ui/PrimaryButton/PrimaryButton";
 import { ProfileSummary } from "./shared/ui/ProfileSummary/ProfileSummary";
 import { ProgressBar } from "./shared/ui/ProgressBar/ProgressBar";
 import { WinnerCard } from "./shared/ui/WinnerCard/WinnerCard";
+import { WithdrawDepositMethod } from "./shared/ui/WithdrawDepositMethod/WithdrawDepositMethod";
 
 function App() {
   return (
@@ -43,7 +45,9 @@ function App() {
       {/* <BetSlip/> */}
       {/* <ErrorSuccessModal/> */}
       {/* <Input title="Title" placeholder="Placeholder" /> */}
-      <PrimaryButton label="Update" />
+      {/* <PrimaryButton label="Update" /> */}
+      {/* <ActiveBonuses  amount={300}/> */}
+      <WithdrawDepositMethod/>
     </>
   );
 }
