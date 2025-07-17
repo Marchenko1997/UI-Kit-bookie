@@ -15,9 +15,9 @@ export const CashBack: React.FC<CashBackProps> = ({ amount, percent }) => {
         Cashback
       </h3>
       <div className="flex justify-between">
-        <div className="flex flex-col gap-[7px]">
+        <div className="flex flex-col gap-[7px] pl-[2px]">
           <p
-            className="text-[#A3A3A3] font-medium text-[12px] leading-[12px] text-left"
+            className="text-[#A3A3A3] font-medium text-[12px] leading-[12px] text-left "
             style={{ fontFamily: "Inter, sans-serif" }}
           >
             Bets placed in 24 hours

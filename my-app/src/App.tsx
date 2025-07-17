@@ -51,7 +51,7 @@ function App() {
       {/* <ActiveBonuses  amount={300}/> */}
       {/* <WithdrawDepositMethod/> */}
       {/* <UserDashboardTabs /> */}
-      <VerificationStatus />
+      {/* <VerificationStatus /> */}
     </>
   );
 }

@@ -8,7 +8,7 @@ interface OneХTwoСardProps {
 
 export const OneХTwoСard: React.FC<OneХTwoСardProps> = ({ label, amount }) => {
   return (
-    <div className="flex justify-between w-full p-[18px]">
+    <div className="flex justify-between w-full p-[18px] bg-[#1C1F22]">
       <div className="flex-1 flex flex-col gap-[6px]">
         <div className="flex gap-[6px] mb-[16px] items-baseline">
           <span className="w-[35px] h-[18px] rounded-[3px] bg-[#E91127]  font-['Proxima_Nova',sans-serif] text-[12px] font-bold leading-[18px] text-white text-center flex items-center justify-center">

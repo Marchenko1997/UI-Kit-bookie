@@ -8,7 +8,7 @@ interface UserDashboardTabsProps {
 export const UserDashboardTabs: React.FC<UserDashboardTabsProps> = ({
   className,
 }) => {
-  const [activeTab, setActiveTab] = useState(profileTabs[0].label); // по умолчанию первый таб активен
+  const [activeTab, setActiveTab] = useState(profileTabs[0].label); 
 
   return (
     <div className="flex w-[841px] bg-[#202327] rounded-full p-[4px]">
