@@ -15,6 +15,7 @@ import { PopularEvents } from "./shared/ui/PopularEvents/PopularEvents";
 import PrimaryButton from "./shared/ui/PrimaryButton/PrimaryButton";
 import { ProfileSummary } from "./shared/ui/ProfileSummary/ProfileSummary";
 import { ProgressBar } from "./shared/ui/ProgressBar/ProgressBar";
+import { UserDashboardTabs } from "./shared/ui/UserDashboardTabs/UserDashboardTabs";
 import { WinnerCard } from "./shared/ui/WinnerCard/WinnerCard";
 import { WithdrawDepositMethod } from "./shared/ui/WithdrawDepositMethod/WithdrawDepositMethod";
 
@@ -47,7 +48,8 @@ function App() {
       {/* <Input title="Title" placeholder="Placeholder" /> */}
       {/* <PrimaryButton label="Update" /> */}
       {/* <ActiveBonuses  amount={300}/> */}
-      <WithdrawDepositMethod/>
+      {/* <WithdrawDepositMethod/> */}
+      <UserDashboardTabs />
     </>
   );
 }
