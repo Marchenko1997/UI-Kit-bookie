@@ -1,5 +1,5 @@
 import React from 'react';
-import { UserIconGreen, StarIcon } from "../../../assets/svg/Icons";
+import { UserIconGreen, StarIcon } from "../../../../public/assets/svg/Icons";
 
 interface FeedbackCardProps {
   userName: string;

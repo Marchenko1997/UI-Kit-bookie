@@ -1,5 +1,5 @@
 import React from "react";
-import { UserIcon, LogoutIcon } from "../../../assets/svg/Icons";
+import { UserIcon, LogoutIcon } from "../../../../public/assets/svg/Icons";
 interface ProfileSummaryProps {
     email: string;
     amount: number;

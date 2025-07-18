@@ -1,5 +1,5 @@
 import React from "react";
-import { Images } from "../../../assets/latesPromotionsImg/index";
+import { Images } from "../../../../public/assets/latesPromotionsImg/index";
 interface LatesPromotionCardProps {
   endsIn: string;
   betType: string;

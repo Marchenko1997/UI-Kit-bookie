@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Dropdown, type MenuProps, Typography } from "antd";
-import { ChevronDownIcon } from "../../../assets/svg/Icons";
+import { ChevronDownIcon } from "../../../../public/assets/svg/Icons";
 
 const items: MenuProps["items"] = [
   { key: "en", label: "English" },

@@ -10,8 +10,8 @@ import {
   ArrowLeft,
     ArrowRight,
   RateIcon
-} from "../../../assets/svg/Icons";
-import { Images } from "../../../assets/popularEvents/index.ts";
+} from "../../../../public/assets/svg/Icons.tsx";
+import { Images } from "../../../../public/assets/popularEvents/index.ts";
 import { matchOdds } from "../../../constants/odds.ts";
 
 interface PopularEventsProps {

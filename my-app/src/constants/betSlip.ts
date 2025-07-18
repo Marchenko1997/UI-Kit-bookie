@@ -1,6 +1,6 @@
-import { PatchIcon } from "../assets/svg/Icons";
-import { MultiPatchIcon } from "../assets/svg/Icons";
-import { SystemPatchIcon } from "../assets/svg/Icons";
+import { PatchIcon } from "../../public/assets/svg/Icons";
+import { MultiPatchIcon } from "../../public/assets/svg/Icons";
+import { SystemPatchIcon } from "../../public/assets/svg/Icons";
 
 export interface BetSlipItem {
   id: "single" | "multi" | "system";

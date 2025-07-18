@@ -1,5 +1,5 @@
 import React, { type ReactNode } from "react";
-import { CryptoIcons, VisaIcon, MasterCard, PayPal } from "../assets/svg/Icons";
+import { CryptoIcons, VisaIcon, MasterCard, PayPal } from "../../public/assets/svg/Icons";
 
 export interface WithdrawMethodGroup {
   title: string;

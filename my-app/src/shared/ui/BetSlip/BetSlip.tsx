@@ -1,8 +1,8 @@
 
 import { useState } from "react";
-import { ListIcon, ArrowRight } from "../../../assets/svg/Icons";
+import { ListIcon, ArrowRight } from "../../../../public/assets/svg/Icons";
 import { betSlip } from "../../../constants/betSlip";
-import PatchImg from "../../../assets/betSlips/patch.png";
+import PatchImg from "../../../../public/assets/betSlips/patch.png";
 
 interface BetSlipProps {
   className?: string;

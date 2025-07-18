@@ -1,4 +1,4 @@
-import { DoneIcon } from "../assets/svg/Icons";
+import { DoneIcon } from "../../public/assets/svg/Icons";
 
 
 export const verificationSteps = [

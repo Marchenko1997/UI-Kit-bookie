@@ -1,4 +1,5 @@
 import "./App.css";
+import { HomePage } from "./pages/HomePage";
 import { ActivateCodeCard } from "./shared/ui/ActivateCodeCard/ActivateCodeCard";
 import { ActiveBonuses } from "./shared/ui/ActiveBonuses/ActiveBonuses";
 import { BetSlip } from "./shared/ui/BetSlip/BetSlip";
@@ -19,6 +20,8 @@ import { UserDashboardTabs } from "./shared/ui/UserDashboardTabs/UserDashboardTa
 import { VerificationStatus } from "./shared/ui/VerificationStatus/VerificationStatus";
 import { WinnerCard } from "./shared/ui/WinnerCard/WinnerCard";
 import { WithdrawDepositMethod } from "./shared/ui/WithdrawDepositMethod/WithdrawDepositMethod";
+
+
 
 function App() {
   return (
@@ -52,6 +55,7 @@ function App() {
       {/* <WithdrawDepositMethod/> */}
       {/* <UserDashboardTabs /> */}
       {/* <VerificationStatus /> */}
+      <HomePage/>
     </>
   );
 }

@@ -7,7 +7,7 @@ import {
   VerificationTab,
   SettingTab,
   TransactionTab,
-} from "../assets/svg/Icons";
+} from "../../public/assets/svg/Icons";
 
 
 export interface ProfileTab {

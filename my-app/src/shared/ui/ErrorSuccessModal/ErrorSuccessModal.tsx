@@ -1,7 +1,7 @@
 import React from "react";
-import ErrorImg from "../../../assets/ErrorSuccessModal/withdrawError.png";
-import SuccessImg from "../../../assets/ErrorSuccessModal/withdrawSucces.png";
-import { CrossIcon, DepositIcon, ChatIcon } from "../../../assets/svg/Icons";
+import ErrorImg from "../../../../public/assets/ErrorSuccessModal/withdrawError.png";
+import SuccessImg from "../../../../public/assets/ErrorSuccessModal/withdrawError.png";
+import { CrossIcon, DepositIcon, ChatIcon } from "../../../../public/assets/svg/Icons";
 
 interface ErrorSuccessModalProps {
   className?: string;

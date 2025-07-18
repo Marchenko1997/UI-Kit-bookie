@@ -4,7 +4,7 @@ import {
   ZeroDollar,
   AddRingIcon,
   BellHeaderIcon,
-} from "../../../assets/svg/Icons";
+} from "../../../../public/assets/svg/Icons";
 
 export const DepositHeader: React.FC = () => {
   return (
