@@ -1,9 +1,22 @@
-import { useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { sportsList, sportsAmounts } from "../../../../constants/sportsList";
-
 
 export const AllSports: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const iconRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const [indicatorLeft, setIndicatorLeft] = useState(0);
+  
+    useEffect(() => {
+      const activeIcon = iconRefs.current[activeIndex];
+      if (activeIcon) {
+        const containerLeft =
+          activeIcon.parentElement?.getBoundingClientRect().left || 0;
+        const iconLeft = activeIcon.getBoundingClientRect().left;
+        const relativeLeft = iconLeft - containerLeft;
+        setIndicatorLeft(relativeLeft + 24.5); // + смещение центра
+      }
+    }, [activeIndex]);
+
 
   return (
     <div className="relative w-full flex flex-col items-left ">
@@ -13,9 +26,7 @@ export const AllSports: React.FC = () => {
       {/* индикатор */}
       <div
         className="absolute top-0 h-[4px] w-[21px] rounded-b-[9px] bg-[#01C6B2] transition-all duration-300"
-        style={{
-          left: `${18 + activeIndex * 70 + 24.5}px`,
-        }}
+        style={{ left: `${indicatorLeft + 18 -10}px` }} 
       />
 
       {/* иконки */}
@@ -26,6 +37,9 @@ export const AllSports: React.FC = () => {
           return (
             <div
               key={index}
+              ref={(el: HTMLDivElement | null) => {
+                iconRefs.current[index] = el;
+              }}
               className="flex  items-left cursor-pointer  relative"
               onClick={() => setActiveIndex(index)}
             >
