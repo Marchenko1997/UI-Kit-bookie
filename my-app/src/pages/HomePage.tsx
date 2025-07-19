@@ -9,12 +9,12 @@ interface HomePageProps {
 export const HomePage: React.FC<HomePageProps> = ({ className }) => {
   return (
     <div className="flex flex-col gap-[28px] ">
-      <div className="block sm:hidden">
+      {/* <div className="block sm:hidden">
         <MobileSlider />
       </div>
       <div className="hidden sm:block">
         <ImageSlider />
-      </div>
+      </div> */}
       <div className="flex flex-col items-center">
         <TopEvents />
       </div>
