@@ -62,8 +62,6 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({ className }) => {
                 alt={`slide-${index}`}
                 className="w-full h-auto object-cover rounded-[5px]"
               />
-
-              {/* Кнопка */}
               {config && (
                 <div className="absolute bottom-4 left-4">
                   <BtnOnMainImg
