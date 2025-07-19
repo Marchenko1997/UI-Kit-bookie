@@ -8,7 +8,7 @@ export const TextBlockForExperienceBet: React.FC<TextBlockForExperienceBetProps>
   className,
 }) => {
     return (
-      <div className=" absolute w-[415px] h-[131px] bottom-[-110px] left-[120px] flex flex-col gap-[18px]">
+      <div className=" absolute w-[415px] h-[131px] bottom-[-140px] left-[162px] flex flex-col gap-[18px]">
         <h2 className="text-[#0F1112] font-proxima font-extrabold text-[32px] leading-[32px] tracking-[0%] uppercase text-left">
           Experience Betting <br /> Without Limits
         </h2>

@@ -5,7 +5,7 @@ export const SliderCounter: React.FC<{ className?: string }> = ({
 }) => {
   return (
     <div
-      className={` absolute flex items-end gap-[0.5px] top-[242px] left-[203px] ${className}`}
+      className={` absolute flex items-end gap-[0.5px] top-[300px] left-[253px] ${className}`}
     >
       <span className="text-[14px] leading-[14px] font-medium text-black/90 font-montserrat">
         02
