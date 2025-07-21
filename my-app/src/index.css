@@ -123,3 +123,34 @@ button:focus-visible {
   -ms-overflow-style: none;  
   scrollbar-width: none;   
 }
+
+/*Home page table*/
+
+.custom-ant-table .ant-table-thead > tr > th {
+  background-color: #202327 !important;
+  color: white !important;
+  font-weight: 600;
+  font-size: 14px;
+  border-bottom: none !important;
+}
+
+.custom-ant-table .ant-table-tbody > tr > td {
+  border-bottom: none !important;
+  padding: 16px;
+}
+
+.custom-ant-table .ant-table-container {
+  border-radius: 0 !important;
+  border: none !important;
+}
+
+.custom-ant-table .ant-table-tbody > tr:hover > td {
+  background-color: #2A2E32 !important;
+  transition: background-color 0.2s ease;
+}
+
+.custom-ant-table .ant-table-thead > tr > th::before {
+  display: none !important;
+}
+
+

@@ -1,3 +1,4 @@
+import { AllBets } from "../components/Home/AllBets/AllBets";
 import { ImageSlider } from "../components/Home/ImageSlider/ImageSlider";
 import { Media } from "../components/Home/Media/Media";
 import { MobileSlider } from "../components/Home/MobileSlider/MobileSlider";
@@ -29,6 +30,9 @@ export const HomePage: React.FC<HomePageProps> = ({ className }) => {
       </div>
       <div className="flex flex-col items-center">
         <Media />
+      </div>
+      <div className="flex flex-col items-center">
+        <AllBets />
       </div>
     </div>
   );
