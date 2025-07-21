@@ -1,39 +1,48 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
-import { ArrowPrev } from "../buttons/ArrowPrev";
-import { ArrowNext } from "../buttons/ArrowNext";
-import {buttonConfigs} from "../../../constants/buttonConfigs"
-import { BtnOnMainImg } from "../buttons/BtnOnMainImg";
-import { TextBlockForExperienceBet } from "../TextBlockForExperienceBet/TextBlockForExperienceBet";
-import { SliderCounter } from "../TextBlockForExperienceBet/SliderCounter";
+
 
 interface ImageSliderProps {
   className?: string;
 }
 
 const slides = [
-  "betanytime",
-  "football",
-  "latesPromotions",
-  "playsmart",
-  "rolsroyscar",
-  "sportcar",
-  "tennis",
+  "betAnyTime",
+  "bettingWithoutLimits",
+  "footballFever",
+  "latesPromotion",
+  "liveBetting",
+  "playSmart",
+  "tennisBetting",
 ];
 
 export const ImageSlider: React.FC<ImageSliderProps> = ({ className }) => {
-  const isMobile = window.innerWidth <= 768;
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const images = slides.map((name) =>
-    isMobile
-      ? `/assets/homePage/${name}1x.png`
-      : `/assets/homePage/${name}2x.png`
-  );
 
-  const currentSlideName = slides[currentSlide];
-  const blackSlides = ["betanytime", "rolsroyscar"];
-  const arrowColor = blackSlides.includes(currentSlideName) ? "black" : "white";
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+ const images = slides
+   .filter((name) => {
+     const has2x = [
+       "betAnyTime",
+       "bettingWithoutLimits",
+       "latesPromotion",
+     ].includes(name);
+     return isMobile ? has2x : true;
+   })
+   .map((name) => {
+     return isMobile
+       ? `/assets/homePage/mainSliderpictures/${name}2x.png`
+       : `/assets/homePage/mainSliderpictures/${name}1x.png`;
+   });
+
+
 
   const settings = {
     dots: false,
@@ -44,45 +53,22 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({ className }) => {
     autoplay: true,
     autoplaySpeed: 3000,
     beforeChange: (_: number, next: number) => setCurrentSlide(next),
-    prevArrow: <ArrowPrev color={arrowColor} />,
-    nextArrow: <ArrowNext color={arrowColor} />,
+    arrows: false,
   };
 
   return (
     <div className={`w-full relative ${className}`}>
       <Slider {...settings}>
-        {images.map((src, index) => {
-          const slideName = slides[index];
-          const config = buttonConfigs.find((b) => b.name === slideName);
-
-          return (
-            <div key={index} className="relative">
-              <img
-                src={src}
-                alt={`slide-${index}`}
-                className="w-full h-auto object-cover rounded-[5px]"
-              />
-              {config && (
-                <div className="absolute bottom-4 left-4">
-                  <BtnOnMainImg
-                    bgColor={config.bgColor}
-                    textColor={config.textColor}
-                    label={config.label}
-                  />
-                </div>
-              )}
-
-              {slideName === "rolsroyscar" && (
-                <>
-                  <div className="absolute top-[60px] left-[80px]">
-                    <TextBlockForExperienceBet />
-                  </div>
-                  <SliderCounter />
-                </>
-              )}
-            </div>
-          );
-        })}
+        {images.map((src, index) => (
+          <div key={index} className="relative">
+            <img
+              src={src}
+              alt={`slide-${index}`}
+              tabIndex={-1}
+              className="w-full h-auto object-cover outline-none rounded-[5px]"
+            />
+          </div>
+        ))}
       </Slider>
     </div>
   );

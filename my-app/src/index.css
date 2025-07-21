@@ -154,3 +154,19 @@ button:focus-visible {
 }
 
 
+/* Убрать фокус с обёрток react-slick */
+.slick-slide:focus,
+.slick-slide div:focus,
+.slick-active:focus,
+.slick-active div:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Убрать фокус с самих картинок */
+.slick-slide img:focus,
+.slick-slide img:active,
+.slick-slide img:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
